@@ -9,7 +9,7 @@ and highlights popular services in the AWS ecosystem.
 1. Clone this project
 
 ```
-git clone https://github.com/abdulbasithansi/aws-first-deploy.git
+git remote add origin https://github.com/Afzalhansi/aws-first-deployment.git
 ```
 
 2. Setup the following environment variables - `(.env)` file
