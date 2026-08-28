@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdul Basit Hansi | First AWS Deployment</title>
+  <meta name="description" content="Abdul Basit Hansi's first Node.js application deployed on AWS EC2." />
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <div class="brand">
+        <img src="/assets/logo.svg" alt="logo" />
+        Abdul Basit Hansi
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#learning">Learning</a></li>
+        <li><a href="#trending">Trending in Cloud</a></li>
+        <li><a href="#deploy">Deployment</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <div class="badge"><span class="dot"></span> Live on AWS EC2</div>
+      <h1>My first app, deployed on <span>AWS</span> 🚀</h1>
+      <p class="lead">
+        Hi, I'm <strong>Abdul Basit Hansi</strong>. This page is running on a Node.js
+        + Express server that I provisioned, configured and deployed on an
+        AWS EC2 instance from scratch — my very first cloud deployment.
+      </p>
+      <div class="hero-actions">
+        <a href="#deploy" class="btn btn-primary">See how it was deployed</a>
+        <a href="https://github.com/" target="_blank" rel="noopener" class="btn btn-secondary">View source</a>
+      </div>
+
+      <div class="arch-strip">
+        <span class="chip">Node.js</span>
+        <span class="arrow">→</span>
+        <span class="chip">Express</span>
+        <span class="arrow">→</span>
+        <span class="chip">Ubuntu on EC2</span>
+        <span class="arrow">→</span>
+        <span class="chip">Elastic IP</span>
+        <span class="arrow">→</span>
+        <span class="chip">🌍 You, right now</span>
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Who built this</div>
+        <h2>About Me</h2>
+        <p>A quick introduction before you dive into the technical bits.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="avatar">AB</div>
+        <div>
+          <h3>Abdul Basit Hansi</h3>
+          <p>
+            I'm learning cloud deployment and DevOps fundamentals by building
+            and shipping real projects instead of just reading about them.
+            This site is proof-of-work: a small Node.js app I personally
+            deployed on an AWS EC2 instance, end to end — from launching the
+            server to configuring the security group that lets you view this
+            page right now.
+          </p>
+          <div class="tag-row">
+            <span class="tag">Node.js</span>
+            <span class="tag">Express</span>
+            <span class="tag">AWS EC2</span>
+            <span class="tag">Ubuntu Server</span>
+            <span class="tag">Git &amp; GitHub</span>
+            <span class="tag">Docker</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="learning">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Currently leveling up</div>
+        <h2>What I'm Learning</h2>
+        <p>The skills I picked up (or am still sharpening) while shipping this project.</p>
+      </div>
+
+      <ul class="status-list" id="learning-list">
+        <li>Loading...</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="trending">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Around the ecosystem</div>
+        <h2>Popular in the AWS World</h2>
+        <p>Services worth knowing as you go deeper into cloud &amp; DevOps.</p>
+      </div>
+
+      <div class="grid" id="trending-grid">
+        <div class="card"><p>Loading...</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="deploy">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">The journey</div>
+        <h2>How This Got Deployed</h2>
+        <p>A simplified version of the exact steps used for this deployment.</p>
+      </div>
+
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="dot-red"></span>
+          <span class="dot-yellow"></span>
+          <span class="dot-green"></span>
+        </div>
+        <div class="terminal-body"><span class="prompt">abdul@local</span><span class="muted">:~$</span> ssh -i my-key.pem ubuntu@&lt;EC2_PUBLIC_IP&gt;
+<span class="muted"># Connected to the EC2 instance</span>
+
+<span class="prompt">ubuntu@ec2</span><span class="muted">:~$</span> sudo apt update &amp;&amp; sudo apt upgrade -y
+<span class="prompt">ubuntu@ec2</span><span class="muted">:~$</span> curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+<span class="prompt">ubuntu@ec2</span><span class="muted">:~$</span> sudo apt install -y nodejs git
+
+<span class="prompt">ubuntu@ec2</span><span class="muted">:~$</span> git clone https://github.com/abdulbasithansi/aws-first-deploy.git
+<span class="prompt">ubuntu@ec2</span><span class="muted">:~$</span> cd aws-first-deploy &amp;&amp; npm install
+
+<span class="prompt">ubuntu@ec2</span><span class="muted">:~$</span> nano .env   <span class="muted"># set PORT, DOMAIN, etc.</span>
+<span class="prompt">ubuntu@ec2</span><span class="muted">:~$</span> npm run start
+
+<span class="muted">🚀 Server running at http://&lt;ELASTIC_IP&gt;:3000</span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>
+        Built &amp; deployed by <a href="#about">Abdul Basit Hansi</a> ·
+        Node.js + Express on AWS EC2 · &copy; <span id="year"></span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

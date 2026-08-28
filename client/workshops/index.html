@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Workshops & Resources | Abdul Basit Hansi</title>
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="brand">
+        <img src="/assets/logo.svg" alt="logo" />
+        Abdul Basit Hansi
+      </div>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/workshops/">Workshops</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Notes & references</div>
+        <h2>Workshops I Followed</h2>
+        <p>Guides and hands-on sessions that helped me get this project onto AWS.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <div class="icon">01</div>
+          <h4>EC2 Fundamentals</h4>
+          <p>Launching an instance, choosing an AMI, key pairs and instance types (t2.micro on the free tier).</p>
+        </div>
+        <div class="card">
+          <div class="icon">02</div>
+          <h4>Security Groups & Networking</h4>
+          <p>Opening inbound rules for SSH (22) and the app port, and understanding stateful firewall rules.</p>
+        </div>
+        <div class="card">
+          <div class="icon">03</div>
+          <h4>SSH & Remote Server Setup</h4>
+          <p>Connecting with a .pem key, updating packages, and installing Node.js + Git on Ubuntu.</p>
+        </div>
+        <div class="card">
+          <div class="icon">04</div>
+          <h4>Environment Variables</h4>
+          <p>Keeping secrets out of source control using a local .env file loaded with dotenv.</p>
+        </div>
+        <div class="card">
+          <div class="icon">05</div>
+          <h4>Elastic IP</h4>
+          <p>Attaching a static public IP so the server's address doesn't change on restart.</p>
+        </div>
+        <div class="card">
+          <div class="icon">06</div>
+          <h4>Keeping the App Alive</h4>
+          <p>Using PM2 / systemd so the Node process survives after the SSH session ends.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p><a href="/">← Back to home</a></p>
+    </div>
+  </footer>
+</body>
+</html>

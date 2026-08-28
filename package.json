@@ -1,0 +1,30 @@
+{
+  "name": "aws-first-deploy",
+  "version": "1.0.0",
+  "description": "Abdul Basit Hansi's first Node.js application deployed on AWS EC2",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "aws",
+    "ec2",
+    "nodejs",
+    "express",
+    "deployment"
+  ],
+  "author": "Abdul Basit Hansi",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
