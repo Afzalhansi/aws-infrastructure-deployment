@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abdul Basit Hansi | First AWS Deployment</title>
-  <meta name="description" content="Abdul Basit Hansi's first Node.js application deployed on AWS EC2." />
+  <title>Abdul Basit Hansi | QA Automation → Cloud/DevOps</title>
+  <meta name="description" content="Abdul Basit Hansi — QA Automation Engineer deploying his first Node.js app to AWS EC2 while leveling up into Cloud/DevOps." />
   <link rel="icon" href="/assets/logo.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="/css/style.css" />
 </head>
@@ -17,38 +17,59 @@
         Abdul Basit Hansi
       </div>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#learning">Learning</a></li>
-        <li><a href="#trending">Trending in Cloud</a></li>
-        <li><a href="#deploy">Deployment</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#toolkit">toolkit</a></li>
+        <li><a href="#learning">learning</a></li>
+        <li><a href="#deploy">deploy.log</a></li>
       </ul>
     </div>
   </nav>
 
   <header class="hero">
     <div class="container">
-      <div class="badge"><span class="dot"></span> Live on AWS EC2</div>
-      <h1>My first app, deployed on <span>AWS</span> 🚀</h1>
-      <p class="lead">
-        Hi, I'm <strong>Abdul Basit Hansi</strong>. This page is running on a Node.js
-        + Express server that I provisioned, configured and deployed on an
-        AWS EC2 instance from scratch — my very first cloud deployment.
-      </p>
-      <div class="hero-actions">
-        <a href="#deploy" class="btn btn-primary">See how it was deployed</a>
-        <a href="https://github.com/" target="_blank" rel="noopener" class="btn btn-secondary">View source</a>
+      <div class="hero-top">
+        <div class="badge"><span class="dot"></span> deployed to AWS EC2 — status: live</div>
+        <h1>QA Automation Engineer,<br />shipping into <span class="accent">Cloud &amp; DevOps</span>.</h1>
+        <p class="lead">
+          I'm Abdul Basit Hansi — I test software for a living, and I'm now
+          learning to build and run the infrastructure it ships on. This page
+          is my first full AWS deployment, provisioned and pushed live by me.
+        </p>
+        <div class="hero-actions">
+          <a href="https://www.linkedin.com/in/abdulhansi/" target="_blank" rel="noopener" class="btn btn-primary">
+            Connect on LinkedIn
+          </a>
+          <a href="https://github.com/Afzalhansi" target="_blank" rel="noopener" class="btn btn-secondary">
+            View GitHub
+          </a>
+          <a href="#deploy" class="btn btn-aws">See the deploy log</a>
+        </div>
       </div>
 
-      <div class="arch-strip">
-        <span class="chip">Node.js</span>
-        <span class="arrow">→</span>
-        <span class="chip">Express</span>
-        <span class="arrow">→</span>
-        <span class="chip">Ubuntu on EC2</span>
-        <span class="arrow">→</span>
-        <span class="chip">Elastic IP</span>
-        <span class="arrow">→</span>
-        <span class="chip">🌍 You, right now</span>
+      <!-- Signature element: bio + deployment framed as a passing test suite -->
+      <div class="suite-terminal">
+        <div class="suite-bar">
+          <span class="filename">jest run --profile=abdul-basit-hansi</span>
+        </div>
+        <div class="suite-body">
+          <p class="suite-line"><span class="tk-cmd">$</span> <span class="tk-text">npm test -- --profile=abdul-basit-hansi</span></p>
+          <p class="suite-line gap"><span class="tk-muted">running 2 suites...</span></p>
+
+          <p class="suite-line"><span class="tk-pass-tag">PASS</span> <span class="tk-file">profile/identity.spec.js</span></p>
+          <p class="suite-line">  <span class="tk-check">✓</span> <span class="tk-text">name is Abdul Basit Hansi</span></p>
+          <p class="suite-line">  <span class="tk-check">✓</span> <span class="tk-text">role is QA Automation Engineer, Dubai UAE</span></p>
+          <p class="suite-line gap">  <span class="tk-check">✓</span> <span class="tk-text">currently leveling up → AWS · Docker · Jenkins · CI/CD</span></p>
+
+          <p class="suite-line"><span class="tk-pass-tag">PASS</span> <span class="tk-file">deployment/aws-ec2.spec.js</span></p>
+          <p class="suite-line">  <span class="tk-check">✓</span> <span class="tk-text">EC2 instance provisioned (Ubuntu, t2.micro)</span></p>
+          <p class="suite-line">  <span class="tk-check">✓</span> <span class="tk-text">security group allows inbound :3000</span></p>
+          <p class="suite-line">  <span class="tk-check">✓</span> <span class="tk-text">GET / → 200 OK</span></p>
+          <p class="suite-line gap">  <span class="tk-check">✓</span> <span class="tk-text">app deployed and reachable publicly</span></p>
+
+          <p class="suite-line"><span class="tk-summary">Test Suites: <span class="tk-status">2 passed</span>, 2 total</span></p>
+          <p class="suite-line"><span class="tk-summary">Tests:       <span class="tk-status">7 passed</span>, 7 total</span></p>
+          <p class="suite-line"><span class="tk-status">STATUS: ALL SYSTEMS GREEN ✓</span><span class="tk-cursor"></span></p>
+        </div>
       </div>
     </div>
   </header>
@@ -56,30 +77,106 @@
   <section id="about">
     <div class="container">
       <div class="section-head">
-        <div class="eyebrow">Who built this</div>
+        <div class="eyebrow">who wrote this</div>
         <h2>About Me</h2>
-        <p>A quick introduction before you dive into the technical bits.</p>
+        <p>The short version, then the timeline underneath.</p>
       </div>
 
       <div class="about-grid">
         <div class="avatar">AB</div>
         <div>
           <h3>Abdul Basit Hansi</h3>
-          <p>
-            I'm learning cloud deployment and DevOps fundamentals by building
-            and shipping real projects instead of just reading about them.
-            This site is proof-of-work: a small Node.js app I personally
-            deployed on an AWS EC2 instance, end to end — from launching the
-            server to configuring the security group that lets you view this
-            page right now.
+          <p class="role-line">QA Automation · CI/CD Pipelines · AWS · Docker · Jenkins — Dubai, UAE</p>
+          <p class="bio">
+            I work as a Junior Software Tester (Automation), building
+            end-to-end test suites with Selenium, TestNG and Cucumber. This
+            site marks the point where I started moving from testing
+            infrastructure to actually building and deploying it — this page
+            itself is running on an EC2 instance I set up from scratch.
           </p>
           <div class="tag-row">
-            <span class="tag">Node.js</span>
-            <span class="tag">Express</span>
+            <span class="tag">Java</span>
+            <span class="tag">Selenium WebDriver</span>
+            <span class="tag">TestNG</span>
+            <span class="tag">Cucumber BDD</span>
+            <span class="tag">REST Assured</span>
             <span class="tag">AWS EC2</span>
-            <span class="tag">Ubuntu Server</span>
-            <span class="tag">Git &amp; GitHub</span>
             <span class="tag">Docker</span>
+            <span class="tag">Jenkins</span>
+          </div>
+          <div class="social-row">
+            <a href="https://www.linkedin.com/in/abdulhansi/" target="_blank" rel="noopener" class="btn btn-primary">LinkedIn ↗</a>
+            <a href="https://github.com/Afzalhansi" target="_blank" rel="noopener" class="btn btn-secondary">GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="timeline">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">git log --author="abdul"</div>
+        <h2>Experience &amp; Education</h2>
+        <p>In chronological order, like any good commit history.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-row">
+          <div class="timeline-hash">c1a9f2e</div>
+          <div class="timeline-date">Jun 2026 → Present</div>
+          <div class="timeline-desc"><strong>Junior Software Tester (Automation)</strong> @ Techsimpl Innovations Technologies LLC — Dubai, UAE (on-site)</div>
+        </div>
+        <div class="timeline-row">
+          <div class="timeline-hash">7b3d81a</div>
+          <div class="timeline-date">Sep 2025 → Jun 2026</div>
+          <div class="timeline-desc"><strong>Junior Software Tester (Automation)</strong> @ Wholewave Elements — Chennai, India. Automated and maintained end-to-end test cases with Selenium WebDriver and Java, improving overall test execution efficiency by 92%.</div>
+        </div>
+        <div class="timeline-row">
+          <div class="timeline-hash">4e02f3c</div>
+          <div class="timeline-date">Oct 2021 → May 2025</div>
+          <div class="timeline-desc"><strong>B.E., Electrical, Electronics &amp; Communications Engineering</strong> — Visvesvaraya Technological University, Grade 8.5</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="toolkit">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">assertions that pass</div>
+        <h2>Core Toolkit</h2>
+        <p>What I already ship with, split by discipline.</p>
+      </div>
+
+      <div class="grid">
+        <div class="skill-card">
+          <div class="skill-head">
+            <h4>Test Automation &amp; QA</h4>
+            <span class="pass-pill">✓ verified</span>
+          </div>
+          <div class="skill-chips">
+            <span class="tag">Java</span>
+            <span class="tag">Selenium WebDriver</span>
+            <span class="tag">TestNG</span>
+            <span class="tag">Cucumber (BDD)</span>
+            <span class="tag">REST Assured</span>
+            <span class="tag">API Testing</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-head">
+            <h4>Cloud &amp; DevOps</h4>
+            <span class="pass-pill">✓ verified</span>
+          </div>
+          <div class="skill-chips">
+            <span class="tag">AWS EC2</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Jenkins</span>
+            <span class="tag">CI/CD Pipelines</span>
+            <span class="tag">Git &amp; GitHub</span>
+            <span class="tag">Linux / Ubuntu Server</span>
           </div>
         </div>
       </div>
@@ -89,9 +186,9 @@
   <section id="learning">
     <div class="container">
       <div class="section-head">
-        <div class="eyebrow">Currently leveling up</div>
+        <div class="eyebrow">currently leveling up</div>
         <h2>What I'm Learning</h2>
-        <p>The skills I picked up (or am still sharpening) while shipping this project.</p>
+        <p>The skills I'm actively sharpening while shipping this project.</p>
       </div>
 
       <ul class="status-list" id="learning-list">
@@ -103,9 +200,9 @@
   <section id="trending">
     <div class="container">
       <div class="section-head">
-        <div class="eyebrow">Around the ecosystem</div>
+        <div class="eyebrow">around the ecosystem</div>
         <h2>Popular in the AWS World</h2>
-        <p>Services worth knowing as you go deeper into cloud &amp; DevOps.</p>
+        <p>Services worth knowing as I go deeper into cloud &amp; DevOps.</p>
       </div>
 
       <div class="grid" id="trending-grid">
@@ -117,7 +214,7 @@
   <section id="deploy">
     <div class="container">
       <div class="section-head">
-        <div class="eyebrow">The journey</div>
+        <div class="eyebrow">the journey</div>
         <h2>How This Got Deployed</h2>
         <p>A simplified version of the exact steps used for this deployment.</p>
       </div>
@@ -135,22 +232,26 @@
 <span class="prompt">ubuntu@ec2</span><span class="muted">:~$</span> curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 <span class="prompt">ubuntu@ec2</span><span class="muted">:~$</span> sudo apt install -y nodejs git
 
-<span class="prompt">ubuntu@ec2</span><span class="muted">:~$</span> git clone https://github.com/abdulbasithansi/aws-first-deploy.git
-<span class="prompt">ubuntu@ec2</span><span class="muted">:~$</span> cd aws-first-deploy &amp;&amp; npm install
+<span class="prompt">ubuntu@ec2</span><span class="muted">:~$</span> git clone https://github.com/Afzalhansi/aws-first-deployment.git
+<span class="prompt">ubuntu@ec2</span><span class="muted">:~$</span> cd aws-first-deployment &amp;&amp; npm install
 
 <span class="prompt">ubuntu@ec2</span><span class="muted">:~$</span> nano .env   <span class="muted"># set PORT, DOMAIN, etc.</span>
 <span class="prompt">ubuntu@ec2</span><span class="muted">:~$</span> npm run start
 
-<span class="muted">🚀 Server running at http://&lt;ELASTIC_IP&gt;:3000</span></div>
+<span class="muted">🚀 Server running at http://&lt;EC2_PUBLIC_IP&gt;:3000</span></div>
       </div>
     </div>
   </section>
 
   <footer>
     <div class="container">
+      <div class="foot-links">
+        <a href="https://www.linkedin.com/in/abdulhansi/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/Afzalhansi" target="_blank" rel="noopener">GitHub</a>
+        <a href="#about">About</a>
+      </div>
       <p>
-        Built &amp; deployed by <a href="#about">Abdul Basit Hansi</a> ·
-        Node.js + Express on AWS EC2 · &copy; <span id="year"></span>
+        Built &amp; deployed by Abdul Basit Hansi · Node.js + Express on AWS EC2 · &copy; <span id="year"></span>
       </p>
     </div>
   </footer>
